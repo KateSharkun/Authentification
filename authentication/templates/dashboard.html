@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+{{username}}
+{% if 'username' in session %}
+
+<p>'Logged in as {{session['username']}}'</p>
+
+{% else %}
+    <p>You are not logged in</p>
+
+{% endif %}
+
+{% endblock content %}
+
